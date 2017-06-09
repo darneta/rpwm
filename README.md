@@ -12,6 +12,8 @@ Check https://github.com/darneta/rpwm-dockerized
 
 # Supported versions
 
+Tested on (might work on older versions too)
+
 * Rhodecode 4.6.x
 * Packagist master
 
