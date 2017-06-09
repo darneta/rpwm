@@ -20,7 +20,7 @@ http.createServer(function (req, res) {
 
   req.on('end', function () {
     var data = [];
-    data = JSON.parse(body);
+    data = body ? JSON.parse(body) : [];
 
     if (!data.hasOwnProperty('token') || data.token !== hooktoken) {
       res.status(401);
@@ -45,7 +45,7 @@ http.createServer(function (req, res) {
                res.end();
            });
            console.log(resp.statusCode);
-           if (200 !== resp.statusCode) {
+           if (202 !== resp.statusCode || 200 !== resp.statusCode) {
     			console.log(body);
            }
       });
