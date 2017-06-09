@@ -38,7 +38,12 @@ http.createServer(function (req, res) {
         json: {"repository":{"url":data.event.repo.url}}
       }, function (error, resp, body) {
 		   res.writeHead(resp.statusCode, resp.headers);
-           res.end(body);
+           resp.on('data', function (chunk) {
+               res.write(chunk);
+           });
+           resp.on('end', function (chunk) {
+               res.end();
+           });
            console.log(resp.statusCode);
            if (200 !== resp.statusCode) {
     			console.log(body);
