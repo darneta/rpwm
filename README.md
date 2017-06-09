@@ -17,7 +17,7 @@ Tested on:
 * Rhodecode 4.6.x
 * Packagist master
 
-Might work on older versions too.
+Might work on older/newer versions too.
 
 # Requirements
 
