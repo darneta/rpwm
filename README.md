@@ -20,9 +20,9 @@ Check https://github.com/darneta/rpwm-dockerized
 #### Via env variables
 `PACKAGIST_USER` - packagist username  
 `PACKAGIST_TOKEN` - packagist API Token  
+`WEBHOOK_TOKEN` - Rhodecode webhook "Secret Token"  
 `PACKAGIST_URL` - default "https://packagist.org"  
 `APP_PORT` - default 80  
-`WEBHOOK_TOKEN` - Rhodecode webhook "Secret Token"
 
 # Setup
 
