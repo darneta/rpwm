@@ -1,0 +1,29 @@
+{
+  "name": "rpwm",
+  "version": "1.0.0",
+  "description": "Middleware that pass through rhodecode webhook to packagist",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darneta/rpwm.git"
+  },
+  "keywords": [
+    "rhodecode",
+    "packagist",
+    "webhook",
+    "middleware"
+  ],
+  "author": "Darius Kristapavicius <darius@darneta.lt>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darneta/rpwm/issues"
+  },
+  "homepage": "https://github.com/darneta/rpwm#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
