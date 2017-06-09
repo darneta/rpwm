@@ -10,6 +10,11 @@ Middleware which passes rhodecode repository webhook to packagist for auto packa
 
 Check https://github.com/darneta/rpwm-dockerized
 
+# Supported versions
+
+* Rhodecode 4.6.x
+* Packagist master
+
 # Requirements
 
 * npm
