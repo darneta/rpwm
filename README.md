@@ -4,7 +4,7 @@ Rhodecode packagist webhook middleware
 
 # TLTR
 
-Middleware which passes rhodecode repository webhook to packagist for auto packagist update on new commit in repository.
+Middleware which passes rhodecode repository webhook to packagist for auto packagist update on push event in repository.
 
 # Run in docker
 
