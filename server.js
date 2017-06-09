@@ -23,10 +23,9 @@ http.createServer(function (req, res) {
     data = body ? JSON.parse(body) : [];
 
     if (!data.hasOwnProperty('token') || data.token !== hooktoken) {
-      res.status(401);
-      res.setHeader('Content-Type', 'application/json');
-      res.send(JSON.stringify({ error: 'Invalid token' }));
-
+      res.writeHead(401, {'Content-Type': 'application/json'});
+      res.write(JSON.stringify({ error: 'Invalid token' }));
+	  res.end();
       console.log('Invalid token!');
     } else {
       request({
